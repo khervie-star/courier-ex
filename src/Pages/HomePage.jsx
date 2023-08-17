@@ -5,6 +5,12 @@ import Navbar from "../Components/Navbar";
 import Footer from "../Components/Footer";
 import Blog from "../Components/Hompage/Blog";
 import TrustedBy from "../Components/Hompage/TrustedBy";
+import WhyChooseUs from "../Components/Hompage/WhyChooseUs";
+import OurTeam from "../Components/Hompage/OurTeam";
+import Services from "../Components/Hompage/Services";
+import CTA1 from "../Components/Hompage/CTA1";
+import Counter from "../Components/Hompage/Counter";
+import CTA2 from "../Components/Hompage/CTA2";
 
 const HomePage = () => {
   return (
@@ -78,11 +84,17 @@ const HomePage = () => {
           </div>
         </div>
       </section>
+      <Services />
+      <CTA1 />
+      <Counter />
+      <CTA2 />
+      <WhyChooseUs />
+      <OurTeam />
       <TrustedBy />
       <Blog />
-      <section className="newsletter h-full w-screen">
+      <section className="newsletter h-full w-screen z-50 relative">
         <div
-          className="container mx-auto p-[100px] bg-[image:var(--image-url)] bg-cover bg-center bg-no-repeat flex flex-row-reverse"
+          className="container mx-auto p-[100px] bg-[image:var(--image-url)] bg-cover bg-center bg-no-repeat flex flex-row-reverse mb-[-175px] "
           style={{ "--image-url": `url(${newsletterbg})` }}>
           <div>
             <h2 className="text-white font-main text-[24px] md:text-[48px] font-bold mt-5">

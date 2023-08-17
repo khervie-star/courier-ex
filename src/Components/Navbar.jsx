@@ -11,12 +11,18 @@ const Navbar = () => {
 
       <nav className="fixed z-50 w-full border-b bg-gray-100">
         <div className="container mx-auto flex items-center justify-between px-6 py-5 md:py-0">
-          <div aria-label="Home. logo" role="img">
+          <div
+            aria-label="Home. logo"
+            role="img"
+            className="flex items-center gap-2">
             <img
               className="w-12 md:w-auto"
               src="https://tuk-cdn.s3.amazonaws.com/can-uploader/centre_aligned_simple-Svg1.svg"
               alt="logo"
             />
+            <div className="text-[28px] font-bold text-indigo-700 font-main">
+              AutoCarriers
+            </div>
           </div>
           <div>
             <button
