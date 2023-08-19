@@ -3,7 +3,7 @@ import CountUp from "react-countup";
 
 const Counter = () => {
   return (
-    <div className="w-screen h-full p-[100px] bg-indigo-700 mt-[100px]">
+    <div className="w-screen h-full p-[100px] bg-orange mt-[100px]">
       <div className="container mx-auto">
         <div className="w-full flex items-start justify-between">
           <div className="text-center">

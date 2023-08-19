@@ -65,7 +65,7 @@ export default function Blog() {
               Learn how to grow your business with our expert advice.
             </p>
           </div>
-          <button className="rounded border border-indigo-700 bg-indigo-700 px-4 py-2 text-sm text-white transition duration-150 ease-in-out  hover:bg-indigo-600 focus:outline-none focus:ring-2 focus:ring-indigo-700 focus:ring-offset-2 sm:px-10 sm:py-4 lg:text-[16px] lg:font-bold font-outfit">
+          <button className="rounded border border-orange bg-orange px-4 py-2 text-sm text-white transition duration-150 ease-in-out  hover:bg-indigo-600 focus:outline-none focus:ring-2 focus:ring-orange focus:ring-offset-2 sm:px-10 sm:py-4 lg:text-[16px] lg:font-bold font-outfit">
             See more
           </button>
         </div>

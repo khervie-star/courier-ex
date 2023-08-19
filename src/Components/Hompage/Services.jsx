@@ -55,16 +55,16 @@ const services = [
 
 const Services = () => {
   return (
-    <div className="w-full p-[100px] mt-[75px]">
+    <div className="w-full p-[16px] md:p-[100px] mt-[75px]">
       <div className="container mx-auto">
-        <div className="flex items-start justify-between mb-[40px]">
-          <div className="w-1/3">
-            <h2 className="text-gray-900 text-4xl font-main font-bold">
+        <div className="flex flex-col md:flex-row items-start justify-between mb-[40px]">
+          <div className="w-full md:w-1/3">
+            <h2 className="text-gray-900 text-[24px] md:text-4xl font-main font-bold">
               Safe & Reliable Cargo Services
             </h2>
           </div>
-          <div className="w-1/3">
-            <p className="text-gray-500 text-[18px] font-light font-mnt">
+          <div className="w-full md:w-1/3">
+            <p className="text-gray-500 text-[15px] md:text-[18px] font-light font-mnt">
               Safe and Reliable cargo solutions is an essential aspect of any
               logistic operation, even when shipping valuable goods
             </p>
@@ -74,9 +74,9 @@ const Services = () => {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-[20px]">
             {services.map((service, i) => (
               <div
-                className="w-full h-[200px] bg-white rounded-[8px] shadow-[0px_7px_29px_0px_rgba(100,100,111,0.2)] p-6"
+                className="w-full h-full bg-white rounded-[8px] shadow-[0px_7px_29px_0px_rgba(100,100,111,0.2)] p-6"
                 key={i}>
-                <div className="text-indigo-700 mb-[20px] text-[32px]">
+                <div className="text-orange mb-[20px] text-[32px]">
                   <service.Icon />
                 </div>
                 <h2 className="text-[28px] font-main font-semibold text-gray-900 mb-3">

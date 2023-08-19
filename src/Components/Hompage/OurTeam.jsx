@@ -9,13 +9,13 @@ const OurTeam = () => {
         <div class="flex flex-col">
           <div class="flex flex-col mt-8">
             <div class="container max-w-7xl px-4">
-              <div class="flex flex-wrap justify-center text-center mb-12">
+              <div class="flex flex-wrap justify-center text-center mb-6 md:mb-12">
                 <div class="w-full lg:w-6/12 px-4">
-                  <h1 class="text-gray-900 text-4xl font-bold font-main mb-4">
+                  <h2 class="text-gray-900 text-[28px] md:text-4xl font-bold font-main mb-4 md:mb-12 text-center">
                     Meet Our Team
-                  </h1>
+                  </h2>
 
-                  <p class="text-gray-700 text-lg font-light font-outfit">
+                  <p class="text-gray-700 text-[15px] md:text-lg font-light font-outfit">
                     With several years of combined experience, we've got a
                     well-seasoned team at the helm.
                   </p>
@@ -92,7 +92,7 @@ const OurTeam = () => {
                         <a
                           href="#"
                           class="flex rounded-full hover:bg-indigo-50 h-10 w-10">
-                          <i class="mdi mdi-linkedin text-indigo-700 mx-auto mt-2"></i>
+                          <i class="mdi mdi-linkedin text-orange mx-auto mt-2"></i>
                         </a>
 
                         <a
@@ -136,7 +136,7 @@ const OurTeam = () => {
                         <a
                           href="#"
                           class="flex rounded-full hover:bg-indigo-50 h-10 w-10">
-                          <i class="mdi mdi-linkedin text-indigo-700 mx-auto mt-2"></i>
+                          <i class="mdi mdi-linkedin text-orange mx-auto mt-2"></i>
                         </a>
 
                         <a
@@ -180,7 +180,7 @@ const OurTeam = () => {
                         <a
                           href="#"
                           class="flex rounded-full hover:bg-indigo-50 h-10 w-10">
-                          <i class="mdi mdi-linkedin text-indigo-700 mx-auto mt-2"></i>
+                          <i class="mdi mdi-linkedin text-orange mx-auto mt-2"></i>
                         </a>
 
                         <a

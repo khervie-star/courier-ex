@@ -24,7 +24,7 @@ const HomePage = () => {
           <div className="mb-5 w-11/12 flex-col items-center justify-center sm:mb-10  sm:w-2/3 lg:flex">
             <h1 className="font-outfit text-center text-[32px] font-bold leading-normal text-white md:text-[56px]  xl:text-[72px]">
               Connecting Miles, Delivering Smiles:
-              <span className="text-indigo-700 mx-2">Unleash</span>
+              <span className="text-orange mx-2">Unleash</span>
               the Power of Timely Couriers
             </h1>
             <p className="mt-5 text-center text-sm font-normal font-outfit text-gray-300 sm:mt-10 sm:text-lg lg:w-10/12">
@@ -35,49 +35,49 @@ const HomePage = () => {
             </p>
           </div>
           <div className="flex items-center justify-center font-outfit text-[18px]">
-            <button className="rounded border border-indigo-700 bg-indigo-700 px-4 py-2 text-sm text-white transition duration-150 ease-in-out  hover:bg-indigo-600 focus:outline-none focus:ring-2 focus:ring-indigo-700 focus:ring-offset-2 sm:px-10 sm:py-4 lg:text-xl lg:font-bold">
+            <button className="rounded border border-orange bg-orange px-4 py-2 text-sm text-white transition duration-150 ease-in-out  hover:bg-orange focus:outline-none focus:ring-2 focus:ring-orange focus:ring-offset-2 sm:px-10 sm:py-4 lg:text-xl lg:font-bold">
               Get Quote
             </button>
-            <button className="ml-4 rounded border-transparent border-indigo-700 bg-white px-4 py-2 text-sm text-indigo-700 transition duration-150 ease-in-out  hover:border-indigo-600 hover:text-indigo-600 focus:outline-none focus:ring-2 focus:ring-indigo-700 focus:ring-offset-2 sm:px-10 sm:py-4 lg:text-xl lg:font-bold">
+            <button className="ml-4 rounded border-transparent border-orange bg-white px-4 py-2 text-sm text-orange transition duration-150 ease-in-out  hover:border-orange hover:text-orange focus:outline-none focus:ring-2 focus:ring-orange focus:ring-offset-2 sm:px-10 sm:py-4 lg:text-xl lg:font-bold">
               Learn more
             </button>
           </div>
         </div>
       </section>
-      <section className="hero-cta font-mnt relative w-screen px-[100]">
-        <div className="container z-[9999] mx-auto mt-[-120px] flex h-full items-center justify-between bg-gray-100 px-[100px] py-[75px] shadow-[0px_48px_100px_0px_rgba(17,12,46,0.15)]">
-          <div className="">
-            <h2 className="mb-[12px] font-bold text-[28px] text-left">
+      <section className="hero-cta font-mnt relative w-screen px-[16px] md:px-[100]">
+        <div className="container z-[9999] mx-auto mt-[-120px] flex flex-col md:flex-row h-full items-center justify-between gap-[50px] bg-gray-100 px-[24px] md:px-[100px] py-[36px] md:py-[75px] shadow-[0px_48px_100px_0px_rgba(17,12,46,0.15)]">
+          <div className="w-full ">
+            <h2 className="mb-[12px] font-bold text-[21px] md:text-[28px] text-left">
               Track & Trace
             </h2>
-            <div className="flex h-[60px] w-[500px]">
-              <div className="relative h-full w-[70%] bg-indigo-100">
+            <div className="flex h-[60px] md:text-[60px] w-full md:w-[500px]">
+              <div className="relative h-full w-[70%] bg-orange/10">
                 <input
-                  className="px-3 font-primary h-full w-full border-transparent bg-transparent font-medium focus:border-2 focus:border-solid focus:border-indigo-700 focus:outline-none focus:ring-0"
+                  className="px-3 font-primary text-[13px] md:text-base h-full w-full border-transparent bg-transparent font-medium focus:border-2 focus:border-solid focus:border-orange focus:outline-none focus:ring-0"
                   placeholder="Tracking number"
                 />
               </div>
               <button
                 type="button"
-                className="font-outfit text-[20px] flex h-full w-[30%] items-center justify-center border-2 border-solid border-indigo-600 bg-indigo-700 font-semibold  text-white">
+                className="font-outfit text-base md:text-[20px] flex h-full w-[30%] items-center justify-center border-2 border-solid border-orange bg-orange font-semibold  text-white">
                 Track
               </button>
             </div>
           </div>
-          <div className="">
-            <h2 className="mb-[12px] font-bold text-[28px] text-left">
+          <div className="w-full">
+            <h2 className="mb-[12px] font-bold text-[21px] md:text-[28px] text-left">
               Find a location
             </h2>
-            <div className="flex h-[60px] w-[500px]">
-              <div className="relative h-full w-[70%] bg-indigo-100">
+            <div className="flex h-[60px] w-full md:w-[500px]">
+              <div className="relative h-full w-[70%] bg-orange/10">
                 <input
-                  className="px-3 font-primary h-full w-full border-transparent bg-transparent font-medium focus:border-2 focus:border-solid focus:border-indigo-700 focus:outline-none focus:ring-0"
+                  className="px-3 font-primary text-[13px] md:text-base h-full w-full border-transparent bg-transparent font-medium focus:border-2 focus:border-solid focus:border-orange focus:outline-none focus:ring-0"
                   placeholder="Tracking number"
                 />
               </div>
               <button
                 type="button"
-                className="font-outfit text-[20px] flex h-full w-[30%] items-center justify-center border-2 border-solid border-indigo-600 bg-indigo-700 font-semibold  text-white">
+                className="font-outfit text-base md:text-[20px] flex h-full w-[30%] items-center justify-center border-2 border-solid border-orange bg-orange font-semibold  text-white">
                 Search
               </button>
             </div>
@@ -86,13 +86,11 @@ const HomePage = () => {
       </section>
       <Services />
       <CTA1 />
-      <Counter />
       <CTA2 />
       <WhyChooseUs />
       <OurTeam />
-      <TrustedBy />
-      <Blog />
-      <section className="newsletter h-full w-screen z-50 relative">
+
+      {/* <section className="newsletter h-full w-screen z-50 relative">
         <div
           className="container mx-auto p-[100px] bg-[image:var(--image-url)] bg-cover bg-center bg-no-repeat flex flex-row-reverse mb-[-175px] "
           style={{ "--image-url": `url(${newsletterbg})` }}>
@@ -101,21 +99,21 @@ const HomePage = () => {
               Subscribe to our Newsletter!
             </h2>
             <div className="flex h-[60px] md:w-[600px]">
-              <div className="relative h-full w-[70%] bg-indigo-100">
+              <div className="relative h-full w-[70%] bg-orange/10">
                 <input
-                  className="px-3 font-mnt h-full w-full border-transparent bg-transparent font-medium focus:border-2 focus:border-solid focus:border-indigo-700 focus:outline-none focus:ring-0"
+                  className="px-3 font-mnt h-full w-full border-transparent bg-transparent font-medium focus:border-2 focus:border-solid focus:border-orange focus:outline-none focus:ring-0"
                   placeholder="Tracking number"
                 />
               </div>
               <button
                 type="button"
-                className="font-outfit text-[20px] flex h-full w-[30%] items-center justify-center border-2 border-solid border-indigo-600 bg-indigo-700 font-semibold  text-white">
+                className="font-outfit text-[20px] flex h-full w-[30%] items-center justify-center border-2 border-solid border-orange bg-orange font-semibold  text-white">
                 Track
               </button>
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
 
       <Footer />
     </>

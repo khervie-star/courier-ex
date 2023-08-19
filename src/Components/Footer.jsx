@@ -10,9 +10,9 @@ import {
 
 const Footer = () => {
   return (
-    <footer className="bottom-0 bg-indigo-700 w-screen pt-[200px]">
+    <footer className="bottom-0 bg-orange w-screen pt -[200px]">
       <div className="mx-auto container py-16 xl:px-20 lg:px-12 sm:px-6 px-4 ">
-        <div className="grid grid-cols-2 md:gap-8 gap-4">
+        <div className="grid grid-cols-1 md:grid-cols-2 md:gap-8 gap-4">
           <div className="flex flex-col flex-shrink-0">
             <div className="mb-6 text-[32px] font-bold text-white font-main">
               AutoCarriers
@@ -32,8 +32,8 @@ const Footer = () => {
               </div>
             </div>
           </div>
-          <div className="flex items-start justify-between">
-            <div className="sm:ml-0 ml-8 text-white font-outfit text-[18px] font-normal">
+          <div className="flex items-start justify-between mt-8 md:mt-0">
+            <div className="sm:ml-0 ml- text-white font-outfit text-[18px] font-normal">
               <h2 className="text-[21px] font-semibold leading-4 ">
                 Quick Links
               </h2>
@@ -67,7 +67,7 @@ const Footer = () => {
             </div>
           </div>
         </div>
-        <div className="bg-gray-400 h-[1px] w-full md:my-[45px]" />
+        <div className="bg-gray-100 h-[1px] w-full my-[30px] md:my-[45px]" />
         <div className="flex justify-between items-center">
           <p className="text-white text-[14px] font-outfit">
             &copy; AutoCarrier 2023

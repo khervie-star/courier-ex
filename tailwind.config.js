@@ -12,6 +12,9 @@ module.exports = {
         "hero-pattern": "url('./Assets/Images/hero.jpeg')",
         "news-letter": "url('/src/Assets/Images/newsletter.jpeg')",
       },
+      colors: {
+        orange: "#F96922",
+      },
     },
   },
   plugins: [],

@@ -1,8 +1,9 @@
 import React from "react";
+import image from "../Assets/Images/WhatsApp Image 2023-08-18 at 19.46.54 (1).jpeg";
 
 const CTA2 = () => {
   return (
-    <div className="container mx-auto px-[100px] mt-[100px]">
+    <div className="container mx-auto px-4 md:px-[100px] mt-[24px] md:mt-[100px]">
       <div className="pb-16 pt-16">
         <div className="mx-auto">
           <div className="flex flex-wrap flex-row-reverse items-center justify-between">
@@ -12,13 +13,13 @@ const CTA2 = () => {
                   How We Help Businesses Accross The World
                 </h1>
                 <h2 className="text-lg lg:text-xl lg:leading-7 md:leading-10 f-f-r py-4 md:py-8 font-mnt">
-                  Here at Globex we take special care of what your organization
-                  needs instead of selling you a mass market tool that takes a
-                  one size fits all approach. I personally review each and every
-                  client business and oversee the team that tailores a solution
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas
+                  laborum id beatae magni! Illo impedit, veritatis perferendis
+                  in saepe eveniet ab consectetur, illum tempora explicabo fugit
+                  iure fuga rerum laborum.
                 </h2>
                 <div className="flex items-center cursor-pointer pb-4 md:pb-0">
-                  <h3 className="f-f-r text-lg lg:text-2xl font-semibold underline decoration-yellow-400 font-outfit text-indigo-700">
+                  <h3 className="f-f-r text-lg lg:text-2xl font-semibold underline decoration-yellow-400 font-outfit text-orange">
                     Learn more
                   </h3>
                   <div className="pl-2">
@@ -40,8 +41,8 @@ const CTA2 = () => {
             <div className="md:w-2/5 w-full relative h-96 flex items-end justify-center">
               <img
                 className="absolute w-full h-full inset-0 object-cover object-center rounded-md "
-                src="https://cdn.tuk.dev/assets/templates/prodify/invoicing-system.png"
-                alt
+                src={image}
+                alt=""
               />
             </div>
           </div>

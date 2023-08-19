@@ -1,7 +1,12 @@
 import React, { useState } from "react";
+import logo from "../Components/Assets/Images/logo.png";
+import { Link, useLocation } from "react-router-dom";
 
 const Navbar = () => {
+  const location = useLocation();
   const [show, setShow] = useState(false);
+
+  console.log(location.pathname);
   return (
     <div
       className="overflow-y-hidden bg-gray-100 pb-12"
@@ -15,14 +20,7 @@ const Navbar = () => {
             aria-label="Home. logo"
             role="img"
             className="flex items-center gap-2">
-            <img
-              className="w-12 md:w-auto"
-              src="https://tuk-cdn.s3.amazonaws.com/can-uploader/centre_aligned_simple-Svg1.svg"
-              alt="logo"
-            />
-            <div className="text-[28px] font-bold text-indigo-700 font-main">
-              AutoCarriers
-            </div>
+            <img className="w-[100px] md:w-[120px]" src={logo} alt="logo" />
           </div>
           <div>
             <button
@@ -69,29 +67,63 @@ const Navbar = () => {
                   <line x1={6} y1={6} x2={18} y2={18} />
                 </svg>
               </button>
-              <ul className="font-outfit fixed bottom-0 left-0 right-0 top-0 z-20 flex flex-col items-center justify-center bg-white py-7 text-3xl md:relative md:flex md:flex-row md:bg-transparent md:text-base md:font-medium">
-                <li className="cursor-pointer pt-10 text-base text-gray-600 hover:text-gray-900 md:pt-0 lg:text-lg">
-                  <a href="javascript: void(0)">Home</a>
+              <ul className="font-outfit fixed bottom-0 left-0 right-0 top-0 z-20 flex flex-col items-center justify-center bg-white py-7 text-3xl md:relative md:flex md:flex-row md:bg-transparent md:text-base md:font-medium transition-all duration-1000 gap-8">
+                <li
+                  className={`cursor-pointer pt-10 text-base text-gray-600 hover:text-gray-900 md:pt-0 lg:text-lg ${
+                    location.pathname == "/"
+                      ? "border-b-2 border-solid border-orange text-[#150200]"
+                      : ""
+                  }`}>
+                  <Link to="/">Home</Link>
                 </li>
-                <li className="cursor-pointer pt-10 text-base text-gray-600 hover:text-gray-900 md:ml-5 md:pt-0 lg:ml-10 lg:text-lg">
-                  <a href="javascript: void(0)">About us</a>
+                <li
+                  className={`cursor-pointer pt-10 text-base text-gray-600 hover:text-gray-900 md:pt-0 lg:text-lg ${
+                    location.pathname == "/about"
+                      ? "border-b-2 border-solid border-orange text-[#150200]"
+                      : ""
+                  }`}>
+                  <Link to="/about">About us</Link>
                 </li>
-                <li className="cursor-pointer pt-10 text-base text-gray-600 hover:text-gray-900 md:ml-5 md:pt-0 lg:ml-10 lg:text-lg">
-                  <a href="javascript: void(0)">Services</a>
+                <li
+                  className={`cursor-pointer pt-10 text-base text-gray-600 hover:text-gray-900 md:pt-0 lg:text-lg ${
+                    location.pathname == "/services"
+                      ? "border-b-2 border-solid border-orange text-[#150200]"
+                      : ""
+                  }`}>
+                  <Link to="javascript: void(0)">Services</Link>
                 </li>
-                <li className="cursor-pointer pt-10 text-base text-gray-600 hover:text-gray-900 md:ml-5 md:pt-0 lg:ml-10 lg:text-lg">
-                  <a href="javascript: void(0)">Contact us</a>
+                <li
+                  className={`cursor-pointer pt-10 text-base text-gray-600 hover:text-gray-900 md:pt-0 lg:text-lg ${
+                    location.pathname == "/contact"
+                      ? "border-b-2 border-solid border-orange text-[#150200]"
+                      : ""
+                  }`}>
+                  <Link to="/contact">Contact us</Link>
                 </li>
+                <div className="flex flex-col gap-10 md:hidden">
+                  <li className="cursor-pointer pt-10 text-base text-orange hover:text-orange/80 md:ml-5 md:pt-0 lg:ml-10 lg:text-lg text-center">
+                    <Link to="javascript: void(0)">Sign In</Link>
+                  </li>
+                  <Link
+                    to="/sign-up"
+                    className="font-outfit rounded border border-orange bg-orange px-4 py-1 text-sm  font-semibold text-white transition duration-150 ease-in-out hover:border-orange/75 hover:bg-orange/75 focus:outline-none focus:ring-2 focus:ring-orange/75 focus:ring-offset-2 sm:px-8 sm:py-3 md:block lg:text-lg lg:font-semibold">
+                    Create account
+                  </Link>
+                </div>
               </ul>
             </div>
           </div>
-          <div className="flex items-center gap-5">
-            <button className="font-outfit hidden rounded border-none border-indigo-700 bg-transparent px-4 py-1 text-sm text-indigo-700 transition duration-150 ease-in-out hover:bg-gray-200 focus:outline-none focus:ring-2 focus:ring-indigo-700 focus:ring-offset-2 sm:px-8 sm:py-3 md:block lg:text-lg lg:font-semibold">
+          <div className="hidden md:flex items-center gap-5">
+            <Link
+              to="/sign-in"
+              className="font-outfit hidden rounded border-none border-orange bg-transparent px-4 py-1 text-sm text-orange transition duration-150 ease-in-out hover:bg-gray-200 focus:outline-none focus:ring-2 focus:ring-orange focus:ring-offset-2 sm:px-8 sm:py-3 md:block lg:text-lg lg:font-semibold">
               Sign In
-            </button>
-            <button className="font-outfit hidden rounded border border-indigo-700 bg-indigo-700 px-4 py-1 text-sm  font-semibold text-white transition duration-150 ease-in-out hover:border-indigo-400 hover:bg-indigo-400 focus:outline-none focus:ring-2 focus:ring-indigo-700 focus:ring-offset-2 sm:px-8 sm:py-3 md:block lg:text-lg lg:font-semibold">
+            </Link>
+            <Link
+              to="/sign-up"
+              className="font-outfit hidden rounded border border-orange bg-orange px-4 py-1 text-sm  font-semibold text-white transition duration-150 ease-in-out hover:border-orange/75 hover:bg-orange/75 focus:outline-none focus:ring-2 focus:ring-orange/75 focus:ring-offset-2 sm:px-8 sm:py-3 md:block lg:text-lg lg:font-semibold">
               Create account
-            </button>
+            </Link>
           </div>
         </div>
       </nav>
@@ -100,7 +132,7 @@ const Navbar = () => {
           <div className='mb-5 w-11/12 flex-col items-center justify-center sm:mb-10  sm:w-2/3 lg:flex'>
             <h1 className='text-center text-2xl font-black leading-7 text-gray-800 sm:text-3xl md:text-4xl md:leading-10 lg:text-5xl xl:text-6xl'>
               The Freedom to Create the
-              <span className='text-indigo-700'>Websites</span>
+              <span className='text-orange'>Websites</span>
               You Want
             </h1>
             <p className='mt-5 text-center text-sm font-normal text-gray-400 sm:mt-10 sm:text-lg lg:w-10/12'>
@@ -110,10 +142,10 @@ const Navbar = () => {
             </p>
           </div>
           <div className='flex items-center justify-center'>
-            <button className='rounded border border-indigo-700 bg-indigo-700 px-4 py-2 text-sm text-white transition duration-150 ease-in-out  hover:bg-indigo-600 focus:outline-none focus:ring-2 focus:ring-indigo-700 focus:ring-offset-2 sm:px-10 sm:py-4 lg:text-xl lg:font-bold'>
+            <button className='rounded border border-orange bg-orange px-4 py-2 text-sm text-white transition duration-150 ease-in-out  hover:bg-indigo-600 focus:outline-none focus:ring-2 focus:ring-orange focus:ring-offset-2 sm:px-10 sm:py-4 lg:text-xl lg:font-bold'>
               Get Started
             </button>
-            <button className='ml-4 rounded border border-indigo-700 bg-transparent px-4 py-2 text-sm text-indigo-700 transition duration-150 ease-in-out  hover:border-indigo-600 hover:text-indigo-600 focus:outline-none focus:ring-2 focus:ring-indigo-700 focus:ring-offset-2 sm:px-10 sm:py-4 lg:text-xl lg:font-bold'>
+            <button className='ml-4 rounded border border-orange bg-transparent px-4 py-2 text-sm text-orange transition duration-150 ease-in-out  hover:border-indigo-600 hover:text-indigo-600 focus:outline-none focus:ring-2 focus:ring-orange focus:ring-offset-2 sm:px-10 sm:py-4 lg:text-xl lg:font-bold'>
               Live Demo
             </button>
           </div>
