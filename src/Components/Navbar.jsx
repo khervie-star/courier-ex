@@ -102,7 +102,7 @@ const Navbar = () => {
                 </li>
                 <div className="flex flex-col gap-10 md:hidden">
                   <li className="cursor-pointer pt-10 text-base text-orange hover:text-orange/80 md:ml-5 md:pt-0 lg:ml-10 lg:text-lg text-center">
-                    <Link to="javascript: void(0)">Sign In</Link>
+                    <Link to="/sign-in">Sign In</Link>
                   </li>
                   <Link
                     to="/sign-up"
