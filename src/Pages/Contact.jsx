@@ -6,7 +6,7 @@ const Contact = () => {
   return (
     <>
       <Navbar />
-      <section className="bg-white py-20 lg:py-[120px] overflow-hidden relative z-10 px-[16px]">
+      <section className="bg-white py-20 lg:py-[120px] overflow-hidden relative z-10 px-[24px]">
         <div className="container mx-auto">
           <div className="flex flex-wrap -mx-4 lg:justify-between">
             <div className="w-full px-4 lg:w-1/2 xl:w-6/12">

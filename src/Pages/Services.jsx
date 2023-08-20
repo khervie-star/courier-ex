@@ -7,7 +7,7 @@ const Services = () => {
   return (
     <>
       <Navbar />
-      <section className="pt-20 lg:pt-[120px] pb-12 lg:pb-[90px] px-[16px]">
+      <section className="pt-20 lg:pt-[120px] pb-12 lg:pb-[90px] px-[24px]">
         <div className="container mx-auto">
           <div className="flex flex-wrap -mx-4">
             <div className="w-full px-4">
