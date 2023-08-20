@@ -90,7 +90,7 @@ const Navbar = () => {
                       ? "border-b-2 border-solid border-orange text-[#150200]"
                       : ""
                   }`}>
-                  <Link to="javascript: void(0)">Services</Link>
+                  <Link to="/services">Services</Link>
                 </li>
                 <li
                   className={`cursor-pointer pt-10 text-base text-gray-600 hover:text-gray-900 md:pt-0 lg:text-lg ${
