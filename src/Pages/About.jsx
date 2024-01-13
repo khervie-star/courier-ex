@@ -8,13 +8,17 @@ import Navbar from "../Components/Navbar";
 import Footer from "../Components/Footer";
 
 const About = () => {
+  const myName = "About";
+  const handleButtonClick = () => {
+    console.log("No");
+  };
   return (
     <>
       <Navbar />
       <div>
         <div class="2xl:container 2xl:mx-auto lg:py-16 lg:px-20 md:py-12 md:px-6 pt-16 py-9 px-4">
           <p class="font-bold text-[18px] leading-3 text-orange drk:text-orange hover:text-orange/80 cursor-pointer pb-2 font-outfit mb-6">
-            About
+            <button onClick={handleButtonClick}>Click</button>
           </p>
           <div class="flex lg:flex-row flex-col lg:gap-8 sm:gap-10 gap-12">
             <div class="w-full lg:w-6/12">
